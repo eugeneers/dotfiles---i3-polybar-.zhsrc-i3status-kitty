@@ -1,25 +1,22 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="apple"
-#ZSH_THEME=""
+ZSH_THEME="myrobby"
 
-# For a full list of active aliases, run `alias`.
-#
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gimp='flatpak run org.gimp.GIMP'
-alias sunshine='flatpak run dev.lizardbyte.app.Sunshine'
-export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/.local/kitty.app/bin:$PATH"
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use)
+source $ZSH/oh-my-zsh.sh
+alias 'vi= "nvim"'
 
-export PATH="/opt/nvim/bin:$PATH"
-alias vi="nvim"
-alias vim="nvim"
+alias ls='eza --icons=auto'
+alias lt='eza --tree --icons=auto'
 
-alias "kooha=flatpak run io.github.seadve.Kooha"
-alias "zen=flatpak run app.zen_browser.zen"
-alias 'obsidian=flatpak run md.obsidian.Obsidian'
-neofetch
+
+pfetch 
+alias v=vim
+alias pt=parui
+export 	EDITOR=nvim
+export 	VISUAL=nvim
