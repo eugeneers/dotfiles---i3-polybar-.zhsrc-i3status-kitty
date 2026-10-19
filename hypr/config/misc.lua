@@ -19,7 +19,9 @@ hl.config({
         no_update_news = true,
         no_donation_nag = true,
     },
-	dwindle = {
-		force_split = 2,
-	},
+    render = {
+        direct_scanout = 2,
+        -- Use the option below if you find games constantly black screening for a couple seconds whenever direct scanout enables/disables
+        -- non_shader_cm = 0,
+    },
 })

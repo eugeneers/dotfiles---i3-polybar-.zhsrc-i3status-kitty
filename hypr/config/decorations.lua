@@ -2,45 +2,40 @@
 
 hl.config({
     general = {
-        gaps_in = 3,
+        gaps_in = 7,
         gaps_out = {
-			top = 5,
-			right = 5,
-			left = 5,
-			bottom = 183,
+			top		= 13,
+			left	= 15,
+			right	= 15,
+			bottom	= 14,
 		},
-		
-        border_size = 2,
+        border_size = 0,
         extend_border_grab_area = 10,
         resize_on_border = true,
         col = {
-            active_border = {
-                colors = { CACHYLGREEN, CACHYDGREEN },
-                angle = 45,
+            active_border	= {
+                colors		= { CACHYLGREEN, CACHYDGREEN },
+                angle		= 45,
             },
             inactive_border = CACHYGRAY,
         },
     },
 	input = {
-		kb_layout  = "us",
-        kb_variant = "",
-        kb_model   = "",
-        kb_options = "",
-        kb_rules   = "",
+		kb_layout	= "us",
+		kb_model	= "",
+		kb_options	= "",
+		kb_rules	= "",
 
-        -- infamous xset r rate 200 35;
-        repeat_rate = 35,
-        repeat_delay = 200,
+		--infamous xset r rate 200 35,
+		repeat_rate = 35,
+		repeat_delay = 200,
 
-        follow_mouse = 1,
-        sensitivity = 0,
-
-        touchpad = {
-            natural_scroll = false,
-        },
-    },
-
-	
+		follow_mouse	= 1,
+		sensitivity		= 0,
+		touchpad = {
+			natural_scroll = false,
+		},
+	},
     group = {
         col = {
             border_active = CACHYLBLUE,
@@ -59,13 +54,12 @@ hl.config({
     },
     decoration = {
         dim_special = 0.3,
-        rounding = 10,
+        rounding = 0,
         active_opacity = 1.0,
         inactive_opacity = 0.90,
         fullscreen_opacity = 1,
         blur = {
-			enabled = true,
-            size = 3,
+            size =0 ,
             passes = 2,
 			vibrancy = 0.1696,
             special = true,

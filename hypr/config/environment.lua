@@ -1,4 +1,5 @@
--- Environmental variables (for reference https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/) if you use UWSM, define your variables in ~/.config/uwsm/env
+-- Environmental variables (for reference https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/)
+-- if you use UWSM, define your variables in ~/.config/uwsm/env
 -- if you don't use UWSM, define your variables here (e.g. hl.env("QT_QPA_PLATFORM", "wayland"))
 
 -- if you have an NVIDIA GPU uncomment the following lines:
@@ -9,3 +10,5 @@
 -- hl.env("__GL_GSYNC_ALLOWED", "1") -- Controls if G-Sync capable monitors should use Variable Refresh Rate (VRR)
 
 
+hl.env("XCURSOR_THEME", "Adwaita")
+hl.env("XCURSOR_SIZE", "24")
